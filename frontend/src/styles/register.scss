@@ -1,0 +1,177 @@
+.register-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.register-container {
+  text-align: center;
+
+  .logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1877f2;
+    margin-bottom: 20px;
+  }
+
+  .register-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .name-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .dob-group,
+    .gender-group {
+      text-align: left;
+      margin-bottom: 15px;
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .dob-select,
+      .gender-options {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .terms-text {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 10px;
+
+      a {
+        color: #1877f2;
+        text-decoration: none;
+      }
+    }
+
+    .sign-up-btn {
+      width: 100%;
+      padding: 10px;
+      background: #42b72a;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background: #36a420;
+      }
+    }
+
+    .login-link {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #1877f2;
+      text-decoration: none;
+    }
+  }
+}
+
+.gender-group {
+  text-align: left;
+  margin-bottom: 15px;
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .gender-options {
+    display: flex;
+    justify-content: space-between;
+
+    .gender-box {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      cursor: pointer;
+      background: white;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    input {
+      margin-right: 5px;
+    }
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  color: #777;
+  background: #f0f2f5;
+  position: absolute;
+  bottom: 0;
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      color: #65676b;
+      font-size: 12px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  hr {
+    width: 80%;
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 5px auto;
+  }
+}
