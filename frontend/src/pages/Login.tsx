@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/login.scss";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate(); // Gunakan hook useNavigate dengan benar
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -38,10 +40,43 @@ const Login = () => {
             Forgotten account?
           </a>
           <div className="divider">or</div>
-          <button className="create-account">Create new account</button>
+          <button
+            className="create-account"
+            onClick={() => navigate("/register")}
+          >
+            Create new account
+          </button>
         </div>
       </div>
-      <footer>
+
+      {/* Footer */}
+      <footer className="footer">
+        <div className="footer-links">
+          <a href="#">English (UK)</a>
+          <a href="#">Bahasa Indonesia</a>
+          <a href="#">Basa Jawa</a>
+          <a href="#">Bahasa Melayu</a>
+          <a href="#">日本語</a>
+          <a href="#">Français (France)</a>
+          <a href="#">Español</a>
+          <a href="#">Português (Brasil)</a>
+          <a href="#">Deutsch</a>
+          <a href="#">More...</a>
+        </div>
+        <hr />
+        <div className="footer-links">
+          <a href="#">Sign Up</a>
+          <a href="#">Log in</a>
+          <a href="#">Messenger</a>
+          <a href="#">Facebook Lite</a>
+          <a href="#">Watch</a>
+          <a href="#">Places</a>
+          <a href="#">Games</a>
+          <a href="#">Marketplace</a>
+          <a href="#">Meta Pay</a>
+          <a href="#">Meta Store</a>
+          <a href="#">Instagram</a>
+        </div>
         <p>Meta © 2025</p>
       </footer>
     </div>

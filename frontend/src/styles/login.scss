@@ -104,8 +104,39 @@ body {
   }
 }
 
-footer {
-  margin-top: 20px;
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
   font-size: 12px;
   color: #777;
+  background: #f0f2f5;
+  position: absolute;
+  bottom: 0;
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    a {
+      text-decoration: none;
+      color: #65676b;
+      font-size: 12px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  hr {
+    width: 80%;
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 5px auto;
+  }
 }
