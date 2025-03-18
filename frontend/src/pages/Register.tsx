@@ -172,7 +172,6 @@ const Register = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-links">
           <a href="#">English (UK)</a>

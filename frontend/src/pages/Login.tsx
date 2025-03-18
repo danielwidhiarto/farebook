@@ -5,7 +5,7 @@ import "../styles/login.scss";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate(); // Gunakan hook useNavigate dengan benar
+  const navigate = useNavigate();
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -49,7 +49,6 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="footer">
         <div className="footer-links">
           <a href="#">English (UK)</a>
